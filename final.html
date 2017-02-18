@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>REALMADRID</title>
+  <meta name="viewport" content="width=device-width, inital-scale=1.0">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style type="text/css">
+  *{
+    margin: 0;
+    border:0;
+    padding:0;
+  }
+  body {
+    background: #f0f0f0;
+    font:14px/20px Arial, San-Serif;
+    color:#555;
+    margin: 0; 
+  }
+  h1 {
+    text-align:center;
+    font-size:180%;
+    line-height: 120%;
+    padding: 5% 0;
+  }
+  h2 {
+    text-decoration: underline;
+    line-height:280%;
+    padding-left: 2%;
+  }
+  p{
+      padding: 1%; 
+   }
+  img {
+      text-align:center;
+      max-width:100%;
+      height:auto;
+      width:auto;
+  }
+  a{
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a:hover{
+    color: #FFF;
+    text-decoration: underline;
+  }
+  header{
+    
+    width: 100%;
+    position :fixed;
+    top:0;
+    left:0;
+    z-index:100;
+    opacity:0.90;
+  }
+  
+  nav {
+    padding: 35px 20px 20px 0;
+  }
+
+  a:hover#menu-icon {
+    border-radius:4px 4px 0 0;
+  }
+  ul{
+    list-style: none;
+  }
+  nav ul li {
+    display: inline-block;
+    float:left;
+    padding: 10px;
+  }
+  .current{
+    color: #FFF;
+    text-decoration: underline;
+  } 
+  #doc{
+    margin: 40px 0;
+  } 
+  #content{
+    margin: 0 auto;
+    max-width: 1140px;
+    margin-top: 110px;
+  }
+ 
+  section {
+    width: 29%;
+    float:left;
+    margin: 2% 2%;
+    text-align: center;
+  }
+  .clear {
+    clear: both;
+  }
+  article{
+    float: left;
+    margin:0 auto;
+    width: 50%;
+    height:auto;
+    padding:4%;
+  }
+  aside{
+    float: right;
+    margin:0 auto;
+    width: 35%;
+    height: auto;
+    padding: 3%;
+  }
+  ul.gym li {
+    padding-left: 3%;
+  }
+  footer {
+    background: #333333;
+    width: 100%;
+    overflow: hidden;
+    opacity:0.90;
+  }
+  footer p, footer h3{
+    color: #FFF;
+  }
+  footer p a {
+    color: #FFF;
+    text-decoration: none;
+  }
+  ul.social li {
+    display: inline;
+  }
+  ul.social li img{
+    height: 50px;
+  }
+  footer.second {
+    border-color: 1px
+    background-color: #333333;
+    max-height: 50px;
+    text-align: center;
+    opacity: 0.95;
+  }
+  /*-----------Media!!!-------*/
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+      height:800px;
+  }
+
+  .item img{
+    height: 800px !important;
+  }
+
+  .logofooter{
+    width: 140px !important;
+    height: 140px !important;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  @media screen and (max-width: 478px){
+    body{
+      position: absolute;
+    }
+  }
+  @media screen and (max-width: 740px){
+    header{
+      position: absolute;
+    }
+    #menu-icon{
+      display: none;
+      position: absolute;
+      padding: 20px;
+      background: #405580
+      right: 20px;
+      top: 60px;
+      width: 50%;
+      border-radius: 2px 0 2px 2px;
+    }
+    nav li {
+      text-align: center;
+      width: 100%;
+      padding: 10px 0;
+      margin: 0;
+    }
+    nav:hover ul {
+      display: block;
+    }
+    section {
+      float:  left;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    article{
+      float: left;
+      width: 100%;
+      margin: 0;
+      padding:0;
+    }
+    aside {
+      float: left;
+      width: 100%;
+      margin: 0;
+      padding:0;
+    }
+  }
+  </style>
+  
+  
+
+
+</head>
+
+<body>
+  <header>
+    <a href="#" id="logo"></a>
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+    <ul class="nav navbar-nav ">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+  <h3></h3>
+  <p></p>
+</div>
+  </header>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="./web/realmadrid_1.png" alt="Image">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="./web/realmadrid_2.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+  
+  <section>
+    <i class="fa fa-credit-card-alt fa-5x"></i>
+    <h1>Get ID</h1>
+    <p>Here at the Real Madrid we have the best  players in the tri-state area as we seek out and recruit talented trainers.</p>
+  </section>
+  <section>
+    <i class="fa fa-anchor fa-5x"></i>
+    <h1>Local and Convenient</h1>
+    <p>Here at the Real Madrid we have the best training staff in the tri-state area as we seek out and recruit talented trainers.</p>
+  </section>
+  <section>
+    <i class="fa fa-check-circle fa-5x"></i>
+    <h1>Check Us Out - Free!</h1>
+    <p>Here at the REal madrid we have the best training staff in the tri-state area as we seek out and recruit talented footballers.</p>
+  </section>
+  <div class="clear"></div>
+  <article>
+    <img src="./web/Real-Madrid-Training-Session (1).jpg"/>
+  </article>
+
+  <aside>
+    <h2>Our Group Class Schedule</h2>
+    <ul class="gym">
+      <li><h3>Pitch Jogging @ 8 a.m. - 60 Minutes</h3></li>
+      <li><h3>Abs And Legs Sculpting @ 12 p.m. - 30 Minutes</h3></li>
+      <li><h3>Taka-Tika @ 10 a.m. - 60 Minutes</h3></li>
+      <li><h3>Power Shooting @ 2 p.m. - 30 Minutes</h3></li>
+      <li><h3>Streaching @ 4 p.m. - 60 Minutes</h3></li>
+    </ul>
+  </aside>
+  <div class="clear"></div>
+
+  <section>
+    <h1>The Coach</h1>
+    <img src="./web/the coach.jpg"/>
+    <p>Here at the Real Madrid we have the best training staff in the tri-state area as we seek out and recruit talented trainers.</p>
+  </section>
+  <section>
+    <h1>The Training</h1>
+    <img src="./web/training_section.jpg"/>
+    <p>Here at the Real madrid we have the best training staff in the tri-state area as we seek out and recruit talented trainers.</p>
+  </section>
+  <section>
+    <h1>The Pitch</h1>
+    <img src="./web/the ground.jpg"/>
+    <p>Here at the Pitch we have the best training staff in the tri-state area as we seek out and recruit talented footballers.</p>
+  </section>
+
+  <footer>
+    <section>
+      <h3><b>REALMADRID</b><h3>
+      <p><b>2-A-51</b><br/><br/>
+      1700 Chestnut St.<br/>
+      Realmadrid, Pa 19100<br/>
+      Realmadrid@thefootball.com
+      </p>
+    </section>
+    <section>
+      <h3>Connect with us!</h3>
+      <ul class="social">
+        <li><a href="#"><i class="fa fa-youtube-play fa-4x"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook-official fa-4x"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus-square fa-4x"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter-square fa-4x"></i></a></li>
+    </section>
+    <section>
+      <img class="logofooter" src="./web/2000px-Football_pictogram.svg.png" width="140" height="140"/>
+    </section>
+  </footer>
+  <footer class="second">
+    <p>my webpage of football</p>
+  </footer>
+</body>
+</html> 
